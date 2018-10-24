@@ -3,7 +3,7 @@ let path = require('path');
 
 let app = express();
 
-const PORT = 4000;
+let PORT = process.env.PORT || 4000;
 app.use(express.json()); // for parsing application/json
 app.use(express.urlencoded({ extended: true })); // for parsing application/x-www-form-urlencoded
 
